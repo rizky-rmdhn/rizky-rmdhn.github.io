@@ -80,16 +80,17 @@
 <nav class="fixed top-0 inset-x-0 z-40 px-4 sm:px-6 md:px-10 py-4 flex items-center justify-between backdrop-blur-md bg-[color:var(--bg)]/75 border-b border-[color:var(--line)]">
   <a href="#top" class="flex items-center gap-2 min-w-0">
     <span class="w-2 h-2 rounded-full bg-[color:var(--acc)] shrink-0"></span>
-    <span class="mono text-[11px] sm:text-sm tracking-widest uppercase truncate">portofolio</span>
+    <span class="mono text-[11px] sm:text-sm tracking-widest uppercase truncate" data-i18n="nav-portfolio">portofolio</span>
   </a>
   <div class="hidden md:flex gap-8 text-sm">
-    <a href="#tentang" class="ulink mono uppercase tracking-widest text-xs"> Tentang</a>
-    <a href="#keahlian" class="ulink mono uppercase tracking-widest text-xs"> Keahlian</a>
-    <a href="#project" class="ulink mono uppercase tracking-widest text-xs"> Project</a>
-    <a href="#kontak" class="ulink mono uppercase tracking-widest text-xs"> Kontak</a>
+    <a href="#tentang" class="ulink mono uppercase tracking-widest text-xs" data-i18n="nav-tentang">Tentang</a>
+    <a href="#keahlian" class="ulink mono uppercase tracking-widest text-xs" data-i18n="nav-keahlian">Keahlian</a>
+    <a href="#project" class="ulink mono uppercase tracking-widest text-xs" data-i18n="nav-project">Project</a>
+    <a href="#kontak" class="ulink mono uppercase tracking-widest text-xs" data-i18n="nav-kontak">Kontak</a>
   </div>
+  <button id="lang-toggle" class="mono text-[11px] uppercase tracking-widest border border-[color:var(--line)] px-2.5 py-1 rounded-full hover:bg-[color:var(--ink)] hover:text-[color:var(--bg)] transition" aria-label="ganti bahasa">EN</button>
   <a href="#kontak" class="hidden md:inline-flex items-center gap-2 mono text-xs uppercase tracking-widest border border-[color:var(--ink)] bg-[color:var(--ink)] text-[color:var(--bg)] hover:bg-[color:var(--acc)] hover:border-[color:var(--acc)] px-3 py-2 rounded-full transition">
-    <span class="w-1.5 h-1.5 rounded-full bg-[color:var(--acc)]"></span> tersedia
+    <span class="w-1.5 h-1.5 rounded-full bg-[color:var(--acc)]"></span> <span data-i18n="nav-tersedia">tersedia</span>
   </a>
   <button id="mbtn" aria-label="menu" class="md:hidden w-10 h-10 grid place-items-center rounded-full border border-[color:var(--line)]">
     <i id="micn" class="fas fa-bars text-sm"></i>
@@ -99,10 +100,10 @@
 <!-- MOBILE NAV -->
 <div id="mnav" class="fixed inset-x-0 top-0 z-30 md:hidden pt-20 pb-8 px-6 bg-[color:var(--bg)] border-b border-[color:var(--line)] shadow-xl">
   <div class="flex flex-col gap-1 mono text-sm uppercase tracking-widest">
-    <a href="#tentang" class="py-3 border-b border-[color:var(--line)] flex justify-between"><span>Tentang</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
-    <a href="#keahlian" class="py-3 border-b border-[color:var(--line)] flex justify-between"><span>Keahlian</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
-    <a href="#project" class="py-3 border-b border-[color:var(--line)] flex justify-between"><span>Project</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
-    <a href="#kontak" class="py-3 flex justify-between"><span>Kontak</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
+    <a href="#tentang" class="py-3 border-b border-[color:var(--line)] flex justify-between"><span data-i18n="nav-tentang">Tentang</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
+    <a href="#keahlian" class="py-3 border-b border-[color:var(--line)] flex justify-between"><span data-i18n="nav-keahlian">Keahlian</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
+    <a href="#project" class="py-3 border-b border-[color:var(--line)] flex justify-between"><span data-i18n="nav-project">Project</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
+    <a href="#kontak" class="py-3 flex justify-between"><span data-i18n="nav-kontak">Kontak</span><i class="fas fa-arrow-right text-xs self-center opacity-50"></i></a>
   </div>
 </div>
 
@@ -110,21 +111,21 @@
 <section id="top" class="relative min-h-[100svh] px-4 sm:px-6 md:px-10 pt-28 sm:pt-32 pb-12 flex flex-col">
   <div class="relative max-w-[1400px] mx-auto w-full grid md:grid-cols-12 gap-8 md:gap-10 items-center flex-1">
     <div class="md:col-span-7 order-2 md:order-1">
-      <p class="mono text-[color:var(--acc)] text-[11px] uppercase tracking-[0.3em] reveal">Halo, nama saya —</p>
+      <p class="mono text-[color:var(--acc)] text-[11px] uppercase tracking-[0.3em] reveal" data-i18n="hero-greeting">Halo, nama saya —</p>
       <h1 class="mt-4 sm:mt-6 hero-name">
         <span class="block reveal">Muhammad</span>
         <span class="block reveal" style="transition-delay:.08s">Rizky <span class="serif italic font-normal text-[color:var(--acc)]">Ramadhan.</span></span>
       </h1>
-      <h2 class="mt-6 sm:mt-8 text-base sm:text-xl md:text-2xl text-[color:var(--muted)] max-w-xl reveal leading-snug" style="transition-delay:.16s">
+      <h2 class="mt-6 sm:mt-8 text-base sm:text-xl md:text-2xl text-[color:var(--muted)] max-w-xl reveal leading-snug" style="transition-delay:.16s" data-i18n="hero-subtitle">
         <span class="text-[color:var(--ink)] font-medium">AI / Machine Learning</span> &amp; <span class="serif italic text-[color:var(--ink)]">Data Science Specialist</span> — membangun model cerdas, computer vision, dan pipeline data untuk masalah nyata.
       </h2>
 
       <div class="mt-8 sm:mt-12 flex flex-wrap gap-3 reveal" style="transition-delay:.24s">
-        <a href="#project" class="group inline-flex items-center gap-3 bg-[color:var(--ink)] text-[color:var(--bg)] font-medium px-5 sm:px-6 py-3 sm:py-3.5 rounded-full hover:bg-[color:var(--acc)] transition">
+        <a href="#project" class="group inline-flex items-center gap-3 bg-[color:var(--ink)] text-[color:var(--bg)] font-medium px-5 sm:px-6 py-3 sm:py-3.5 rounded-full hover:bg-[color:var(--acc)] transition" data-i18n="hero-cta-project">
           <span>Lihat Project</span>
           <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
         </a>
-        <a href="cv.pdf" download class="inline-flex items-center gap-3 border border-[color:var(--ink)] hover:bg-[color:var(--ink)] hover:text-[color:var(--bg)] px-5 sm:px-6 py-3 sm:py-3.5 rounded-full transition">
+        <a href="cv.pdf" download class="inline-flex items-center gap-3 border border-[color:var(--ink)] hover:bg-[color:var(--ink)] hover:text-[color:var(--bg)] px-5 sm:px-6 py-3 sm:py-3.5 rounded-full transition" data-i18n="hero-cta-cv">
           <i class="fas fa-arrow-down"></i> Unduh CV
         </a>
       </div>
@@ -149,7 +150,7 @@
     <div class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]">
       <span id="clock" class="tabular-nums"></span> · WIB · Karawang, ID
     </div>
-    <a href="#tentang" class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)] hover:text-[color:var(--ink)] flex items-center gap-3 group">
+    <a href="#tentang" class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)] hover:text-[color:var(--ink)] flex items-center gap-3 group" data-i18n="hero-scroll">
       <span class="w-10 h-px bg-[color:var(--muted)] group-hover:bg-[color:var(--ink)] group-hover:w-16 transition-all"></span>
       gulir
     </a>
@@ -182,22 +183,22 @@
 <section id="tentang" class="px-4 sm:px-6 md:px-10 py-20 sm:py-28 md:py-36">
   <div class="max-w-[1200px] mx-auto grid md:grid-cols-12 gap-10 md:gap-12">
     <div class="md:col-span-5 reveal">
-      <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)]">Tentang Saya</p>
-      <h2 class="serif text-4xl sm:text-5xl md:text-6xl mt-5 sm:mt-6 leading-[1]">
+      <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)]" data-i18n="about-label">Tentang Saya</p>
+      <h2 class="serif text-4xl sm:text-5xl md:text-6xl mt-5 sm:mt-6 leading-[1]" data-i18n="about-title">
         Mengubah <span class="italic text-[color:var(--acc)]">data mentah</span> menjadi wawasan.
       </h2>
     </div>
     <div class="md:col-span-6 md:col-start-7 space-y-5 sm:space-y-6 reveal" style="transition-delay:.1s">
-      <p class="text-base sm:text-lg text-[color:var(--muted)] leading-relaxed">
+      <p class="text-base sm:text-lg text-[color:var(--muted)] leading-relaxed" data-i18n="about-content1">
         Saya seorang profesional IT dengan ketertarikan mendalam pada <span class="text-[color:var(--ink)] font-medium">kecerdasan buatan</span> dan rekayasa data. Berbekal latar belakang akademik yang kuat, saya senang mengeksplorasi bagaimana algoritma dapat mengubah data mentah menjadi wawasan berharga.
       </p>
-      <p class="text-base sm:text-lg text-[color:var(--muted)] leading-relaxed">
+      <p class="text-base sm:text-lg text-[color:var(--muted)] leading-relaxed" data-i18n="about-content2">
         Saya terbiasa <span class="text-[color:var(--ink)] font-medium">melatih model klasifikasi secara mandiri</span>, mengoptimalkan pipeline data, dan mengintegrasikan model AI ke dalam sistem aplikasi yang siap pakai.
       </p>
       <dl class="grid grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-[color:var(--line)]">
-        <div><dt class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]">Project</dt><dd class="serif text-3xl sm:text-4xl mt-2"><span class="num">04</span><span class="text-[color:var(--muted)] text-lg">+</span></dd></div>
-        <div><dt class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]">Fokus</dt><dd class="serif text-2xl sm:text-4xl mt-2 italic">AI / DL</dd></div>
-        <div><dt class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]">Status</dt><dd class="serif text-2xl sm:text-4xl mt-2 italic text-[color:var(--acc)]">open</dd></div>
+        <div><dt class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]" data-i18n="about-stat-project">Project</dt><dd class="serif text-3xl sm:text-4xl mt-2"><span class="num">04</span><span class="text-[color:var(--muted)] text-lg">+</span></dd></div>
+        <div><dt class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]" data-i18n="about-stat-fokus">Fokus</dt><dd class="serif text-2xl sm:text-4xl mt-2 italic">AI / DL</dd></div>
+        <div><dt class="mono text-[10px] uppercase tracking-widest text-[color:var(--muted)]" data-i18n="about-stat-status">Status</dt><dd class="serif text-2xl sm:text-4xl mt-2 italic text-[color:var(--acc)]" data-i18n="about-status-value">open</dd></div>
       </dl>
     </div>
   </div>
@@ -207,8 +208,8 @@
 <section id="keahlian" class="px-4 sm:px-6 md:px-10 py-20 sm:py-28 md:py-36 bg-[color:var(--bg-2)] border-y border-[color:var(--line)]">
   <div class="max-w-[1200px] mx-auto">
     <div class="mb-12 sm:mb-16 reveal">
-      <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)]">Keahlian &amp; Teknologi</p>
-      <h2 class="serif text-4xl sm:text-5xl md:text-6xl mt-5 sm:mt-6 leading-[1]">Tumpukan kerja saya.</h2>
+      <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)]" data-i18n="skills-label">Keahlian &amp; Teknologi</p>
+      <h2 class="serif text-4xl sm:text-5xl md:text-6xl mt-5 sm:mt-6 leading-[1]" data-i18n="skills-title">Tumpukan kerja saya.</h2>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
       <div class="reveal p-5 sm:p-6 bg-[color:var(--panel)] border border-[color:var(--line)] rounded-2xl hover:border-[color:var(--ink)] transition">
@@ -239,8 +240,8 @@
 <section id="project" class="px-4 sm:px-6 md:px-10 py-20 sm:py-28 md:py-36">
   <div class="max-w-[1200px] mx-auto">
     <div class="mb-12 sm:mb-16 reveal">
-      <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)]">Project</p>
-      <h2 class="serif text-4xl sm:text-5xl md:text-6xl mt-5 sm:mt-6 leading-[1]">Karya terpilih.</h2>
+      <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)]" data-i18n="project-label">Project</p>
+      <h2 class="serif text-4xl sm:text-5xl md:text-6xl mt-5 sm:mt-6 leading-[1]" data-i18n="project-title">Karya terpilih.</h2>
     </div>
 
     <div class="space-y-4 sm:space-y-5">
@@ -365,11 +366,11 @@
 <!-- KONTAK -->
 <section id="kontak" class="relative px-4 sm:px-6 md:px-10 py-24 sm:py-32 md:py-44 border-t border-[color:var(--line)] bg-[color:var(--bg-2)] overflow-hidden">
   <div class="relative max-w-[1200px] mx-auto text-center">
-    <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)] reveal">Kontak</p>
-    <h2 class="serif mt-5 sm:mt-6 reveal leading-[0.9]" style="transition-delay:.1s;font-size:clamp(3rem,13vw,9rem);">
+    <p class="mono text-[11px] uppercase tracking-[0.3em] text-[color:var(--muted)] reveal" data-i18n="contact-label">Kontak</p>
+    <h2 class="serif mt-5 sm:mt-6 reveal leading-[0.9]" style="transition-delay:.1s;font-size:clamp(3rem,13vw,9rem);" data-i18n="contact-title">
       Mari ber<span class="italic text-[color:var(--acc)]">kolaborasi.</span>
     </h2>
-    <p class="text-base sm:text-lg text-[color:var(--muted)] mt-6 sm:mt-8 max-w-xl mx-auto reveal" style="transition-delay:.15s">
+    <p class="text-base sm:text-lg text-[color:var(--muted)] mt-6 sm:mt-8 max-w-xl mx-auto reveal" style="transition-delay:.15s" data-i18n="contact-desc">
       Saya selalu terbuka untuk diskusi project, peluang kerja, atau bertukar pikiran tentang AI dan teknologi.
     </p>
 
@@ -415,6 +416,47 @@
   const mnav=document.getElementById('mnav'),mbtn=document.getElementById('mbtn'),micn=document.getElementById('micn');
   const closeNav=()=>{mnav.classList.remove('open');micn.className='fas fa-bars text-sm';};
   mbtn.addEventListener('click',()=>{const o=mnav.classList.toggle('open');micn.className=o?'fas fa-xmark text-sm':'fas fa-bars text-sm';});
+
+  // i18n
+  const langData={
+    id:{
+      'nav-portfolio':'portofolio','nav-tentang':'Tentang','nav-keahlian':'Keahlian','nav-project':'Project','nav-kontak':'Kontak','nav-tersedia':'tersedia',
+      'hero-greeting':'Halo, nama saya —','hero-cta-project':'Lihat Project','hero-cta-cv':'Unduh CV','hero-scroll':'gulir',
+      'hero-subtitle':'<span class="text-[color:var(--ink)] font-medium">AI / Machine Learning</span> &amp; <span class="serif italic text-[color:var(--ink)]">Data Science Specialist</span> — membangun model cerdas, computer vision, dan pipeline data untuk masalah nyata.',
+      'about-label':'Tentang Saya','about-stat-project':'Project','about-stat-fokus':'Fokus','about-stat-status':'Status','about-status-value':'open',
+      'about-title':'Mengubah <span class="italic text-[color:var(--acc)]">data mentah</span> menjadi wawasan.',
+      'about-content1':'Saya seorang profesional IT dengan ketertarikan mendalam pada <span class="text-[color:var(--ink)] font-medium">kecerdasan buatan</span> dan rekayasa data. Berbekal latar belakang akademik yang kuat, saya senang mengeksplorasi bagaimana algoritma dapat mengubah data mentah menjadi wawasan berharga.',
+      'about-content2':'Saya terbiasa <span class="text-[color:var(--ink)] font-medium">melatih model klasifikasi secara mandiri</span>, mengoptimalkan pipeline data, dan mengintegrasikan model AI ke dalam sistem aplikasi yang siap pakai.',
+      'skills-label':'Keahlian &amp; Teknologi','skills-title':'Tumpukan kerja saya.',
+      'project-label':'Project','project-title':'Karya terpilih.',
+      'contact-label':'Kontak','contact-title':'Mari ber<span class="italic text-[color:var(--acc)]">kolaborasi.</span>',
+      'contact-desc':'Saya selalu terbuka untuk diskusi project, peluang kerja, atau bertukar pikiran tentang AI dan teknologi.'
+    },
+    en:{
+      'nav-portfolio':'portfolio','nav-tentang':'About','nav-keahlian':'Skills','nav-project':'Projects','nav-kontak':'Contact','nav-tersedia':'available',
+      'hero-greeting':'Hello, my name is —','hero-cta-project':'View Projects','hero-cta-cv':'Download CV','hero-scroll':'scroll',
+      'hero-subtitle':'<span class="text-[color:var(--ink)] font-medium">AI / Machine Learning</span> &amp; <span class="serif italic text-[color:var(--ink)]">Data Science Specialist</span> — building intelligent models, computer vision, and data pipelines for real-world problems.',
+      'about-label':'About Me','about-stat-project':'Projects','about-stat-fokus':'Focus','about-stat-status':'Status','about-status-value':'open',
+      'about-title':'Turning <span class="italic text-[color:var(--acc)]">raw data</span> into insights.',
+      'about-content1':'An IT professional with a deep passion for <span class="text-[color:var(--ink)] font-medium">artificial intelligence</span> and data engineering. With a strong academic background, I enjoy exploring how algorithms can transform raw data into valuable insights.',
+      'about-content2':'I am experienced in <span class="text-[color:var(--ink)] font-medium">independently training classification models</span>, optimizing data pipelines, and integrating AI models into production-ready applications.',
+      'skills-label':'Skills &amp; Technologies','skills-title':'My tech stack.',
+      'project-label':'Projects','project-title':'Selected works.',
+      'contact-label':'Contact','contact-title':'Let\'s <span class="italic text-[color:var(--acc)]">collaborate.</span>',
+      'contact-desc':'I\'m always open to discussing projects, job opportunities, or exchanging ideas about AI and technology.'
+    }
+  };
+  let curLang=localStorage.getItem('lang')||'id';
+  function setLang(l){
+    curLang=l;localStorage.setItem('lang',l);
+    document.getElementById('lang-toggle').textContent=l==='id'?'EN':'ID';
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const k=el.dataset.i18n,v=langData[l][k];
+      if(v)el.innerHTML=v;
+    });
+  }
+  setLang(curLang);
+  document.getElementById('lang-toggle').addEventListener('click',()=>setLang(curLang==='id'?'en':'id'));
 </script>
 </body>
 </html>
